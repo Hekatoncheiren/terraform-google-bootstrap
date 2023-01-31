@@ -19,8 +19,13 @@
 *******************************************/
 
 output "seed_project_id" {
-  description = "Project where service accounts and core APIs will be enabled."
+  description = "Project id where service accounts and core APIs will be enabled."
   value       = module.seed_project.project_id
+}
+
+output "seed_project_number" {
+  description = "Project number where service accounts and core APIs will be enabled."
+  value       = module.seed_project.project_number
 }
 
 /******************************************
